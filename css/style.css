@@ -81,7 +81,7 @@ form .btn:hover{
 }
 /* end accordion */
 /* start sec3 */
-.destination .main-title{
+.main-title{
     color: var(--primary-color);
     font-size: 35px;
     margin-bottom: 30px;
@@ -121,3 +121,33 @@ form .btn:hover{
     color: #fff;
 }
 /* start sec3 */
+/* thanks */
+.wrapper{
+    position: relative;
+}
+.wrapper .text-thanks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: var(--transition);
+} 
+.wrapper .text-thanks:hover{
+    opacity: 1;
+    
+}
+.overlay{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 0;
+}
+.wrapper:hover .overlay{
+    height: 100%;
+    /* transition: var(--transition); */
+}
+/* thanks */
